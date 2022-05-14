@@ -39,7 +39,7 @@ let promise3 = new Promise((resolve,reject)=> {
     }, delay * 1000);
 });
 
-promise1.then(res => files[0].innerHTML += res).catch(res => files[0].innerHTML += res)
-promise2.then(res =>files[1].innerHTML += res).catch(res => files[1].innerHTML += res)
-promise3.then(res => files[2].innerHTML += res).catch(res => files[2].innerHTML += res)
+promise1.then(res => files[0].innerText += res).catch(res => files[0].innerText += res)
+promise2.then(res =>files[1].innerText += res).catch(res => files[1].innerText += res)
+promise3.then(res => files[2].innerText += res).catch(res => files[2].innerText += res)
 
